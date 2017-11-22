@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC:Weather-App</title>
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- weather-icons -->
+    <link rel="stylesheet" href="css/weather-icons.min.css" type="text/css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 weather">
+                <h1>Free Code Camp Local Weather App</h1>
+                <div class="row weather-data-row">
+                    <div class="col-md-6">                        
+                        <p class="weather-temp">
+                            <i id="weatherIcon"></i>
+                            <span id="temp"></span>
+                            <span id="tempUnit"></span>
+                        </p>
+                    </div>                    
+                    <div class="col-md-6 weather-info">
+                        <ul>
+                            <li id="city"></li>
+                            <li id="weatherDescription"></li>
+                        </ul>
+                    </div>                    
+                </div>                
+            </div>
+        </div>
+        <div class="row weather-data2-row">
+            <div class="col-md-6 offset-md-3 wData2">
+                <!-- custom table data using div -->
+                <div class="row">
+                    <div class="col-md-4 wData2-col bLeft">
+                        <div class="row wData2-title-row">
+                            <div class="col-md">
+                                <h5 class="wTitle">Humidity</h5>
+                            </div>
+                        </div>
+                        <div class="row wData2-des-row">
+                            <div class="col-md">
+                                <p id="hum" class="wDescription">n/a</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wData2-col">
+                        <div class="row wData2-title-row">
+                            <div class="col-md">
+                                <h5 class="wTitle">Wind</h5>
+                            </div>
+                        </div>
+                        <div class="row wData2-des-row">
+                            <div class="col-md">
+                                <p id="windSpeed" class="wDescription">n/a</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row wData2-title-row">
+                            <div class="col-md">
+                                <h5 class="wTitle">Cloud</h5>
+                            </div>
+                        </div>
+                        <div class="row wData2-des-row">
+                            <div class="col-md">
+                                <p id="cloud" class="wDescription">n/a</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <p class="footer-text">copyright &copy;2017 | Design and Develope by Zubair.</p>
+            </div>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

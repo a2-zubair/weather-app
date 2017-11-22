@@ -1,0 +1,98 @@
+body{
+    margin-top:50px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+p{
+    padding:0;
+    margin: 0;
+}
+
+.weather h1{
+    font-size: 33px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.weather i{
+    font-size:40px;
+    margin:0 20px 0 48px;
+}
+
+.weather h3{
+    margin-top:20px;
+}
+
+.weather-temp{
+    margin-top: 20px;
+}
+
+
+#tempUnit{
+    cursor: pointer;
+}
+
+#tempUnit:hover{
+    color: blue;
+}
+
+#temp, #tempUnit{
+    font-family:Roboto;
+    font-size: 38px;
+}
+
+.weather-data-row{
+    border: 1px solid lightgray;
+}
+
+.weather-info{
+    border-left: 1px solid lightgrey;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: #3380FF;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.weather-info ul{
+    list-style:none;
+    font-size:20px;
+}
+
+/* weather info part 2 */
+.weather-data2-row{
+    margin-top:15px;
+}
+
+.wData2{
+    text-align: center;
+}
+
+.wData2-col{
+    border-right: 1px solid white;
+}
+
+.wData2-title-row{
+    background-color:red;
+}
+
+.wTitle{
+    padding-top: 5px;
+    color: white;
+}
+
+.wData2-des-row{
+    background-color: black;
+    color:white;
+}
+
+.wDescription{
+    padding:5px 0;
+}
+
+.footer-text{
+    padding-top: 20px;
+    text-align: center;
+}
