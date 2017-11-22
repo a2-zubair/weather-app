@@ -1,3 +1,3 @@
 # Local Weather App
 
-FCC: local weather app
+"Free Code Camp" front end developer project: Local Weather App.
