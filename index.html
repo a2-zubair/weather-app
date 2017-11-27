@@ -15,31 +15,44 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+    <!-- container -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6 offset-md-3 weather">
+            <!-- top part -->
+            <div class="col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1 weather">
+                <!-- app title -->
                 <h1>Free Code Camp Local Weather App</h1>
+                <!-- end app title -->
+                <!-- top part of weather data -->
                 <div class="row weather-data-row">
+                    <!-- temp icon and unit -->
                     <div class="col-md-6">                        
                         <p class="weather-temp">
                             <i id="weatherIcon"></i>
                             <span id="temp"></span>
                             <span id="tempUnit"></span>
                         </p>
-                    </div>                    
+                    </div>
+                   <!-- end temp icon and unit -->
+                   <!-- city and weather description -->
                     <div class="col-md-6 weather-info">
                         <ul>
                             <li id="city"></li>
                             <li id="weatherDescription"></li>
                         </ul>
                     </div>                    
-                </div>                
+                    <!-- end city and weather description -->
+                </div>
+               <!-- end top part of weather data -->
             </div>
+            <!-- end top part -->
         </div>
+        <!-- bottom part -->
         <div class="row weather-data2-row">
-            <div class="col-md-6 offset-md-3 wData2">
-                <!-- custom table data using div -->
+            <div class="col-lg-8 col-md-10 col-sm-12 offset-lg-2 offset-md-1 wData2">
+                <!-- weather data second part -->
                 <div class="row">
+                    <!-- humidity -->
                     <div class="col-md-4 wData2-col bLeft">
                         <div class="row wData2-title-row">
                             <div class="col-md">
@@ -52,6 +65,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- end humidity -->
+                    <!-- wind -->
                     <div class="col-md-4 wData2-col">
                         <div class="row wData2-title-row">
                             <div class="col-md">
@@ -64,6 +79,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- end wind -->
+                    <!-- cloud -->
                     <div class="col-md-4">
                         <div class="row wData2-title-row">
                             <div class="col-md">
@@ -76,16 +93,32 @@
                             </div>
                         </div>
                     </div>
+                    <!-- end cloud -->
                 </div>
+                <!-- end weather data second part -->
             </div>
         </div>
+        <!-- end bottom part -->
         <!-- footer -->
         <div class="row">
             <div class="col-md-6 offset-md-3">
+                <div class="credits">
+                    
+                    <ul>
+                        <p>Credits</p>
+                        <li>JavaScript Library: <a href="https://jquery.com/">Jquery</a></li>
+                        <li>Css Framework: <a href="https://getbootstrap.com/">Bootstrap 4</a></li>
+                        <li>Weather API: <a href="https://openweathermap.org/api">Open Weather Map</a></li>
+                        <li>Weather Icon: <a href="https://weathericons.io/">Weather Icons</a></li>
+                        <li>Fonts Library: <a href="https://fonts.google.com/">Google Fonts</a></li>
+                    </ul>
+                </div>
                 <p class="footer-text">copyright &copy;2017 | Design and Develope by Zubair.</p>
             </div>
         </div>
+        <!-- end footer -->
     </div>
+    <!-- end container -->
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

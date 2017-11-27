@@ -1,7 +1,8 @@
+/* generel css */
 body{
     margin-top:50px;
     font-family: 'Roboto', sans-serif;
-
+    background: cornsilk;
 }
 
 p{
@@ -9,11 +10,14 @@ p{
     margin: 0;
 }
 
+
+/* weather top part */
 .weather h1{
     font-size: 33px;
     margin-bottom: 40px;
     text-align: center;
     font-weight: bold;
+    text-shadow: 2px 1px 3px greenyellow;
 }
 
 .weather i{
@@ -25,6 +29,7 @@ p{
     margin-top:20px;
 }
 
+/* weather temp and unit */
 .weather-temp{
     margin-top: 20px;
 }
@@ -43,6 +48,34 @@ p{
     font-size: 38px;
 }
 
+@media(max-width:990px){
+  .weather h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+@media(max-width:770px){
+  .weather{
+    text-align:center;
+    padding:0 10%; 
+  }
+  .weather h1{
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .weather i{
+    font-size:40px;
+    margin:0 20px 0 48px;
+  }
+}
+
+
+/* weather top right side data css*/
 .weather-data-row{
     border: 1px solid lightgray;
 }
@@ -61,7 +94,7 @@ p{
     font-size:20px;
 }
 
-/* weather info part 2 */
+/* weather second part data css */
 .weather-data2-row{
     margin-top:15px;
 }
@@ -74,6 +107,8 @@ p{
     border-right: 1px solid white;
 }
 
+
+/* weather second part title data css */
 .wData2-title-row{
     background-color:red;
 }
@@ -83,6 +118,8 @@ p{
     color: white;
 }
 
+
+/* weather second part description data css */
 .wData2-des-row{
     background-color: black;
     color:white;
@@ -92,7 +129,22 @@ p{
     padding:5px 0;
 }
 
+@media(max-width:770px){
+  .weather-data2-row{
+    padding: 0 8%;
+  }
+}
+
+/* credits and footer css */
+.credits{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.credits ul{
+    list-style: none;
+}
+
 .footer-text{
-    padding-top: 20px;
     text-align: center;
 }
