@@ -2,7 +2,7 @@
 
 The "Local Weather App" is build for **Free Code Camp** as a intermediate front end development project. This app will show your current local weather condition.
 
-##Tools
+## Tools
 
 1. Css Freamework: [Bootstrap 4](https://getbootstrap.com/) 
 
