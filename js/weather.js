@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var lat, lon, city, country, tempUnit="F", switchTemp = true;
+    var lat, lon, city, country, tempUnit="F", switchTemp = true, time = new Date().getHours();
 
     $.getJSON("https://ipapi.co/json", function(data){
         lat = data.latitude;
@@ -34,7 +34,9 @@ $(document).ready(function(){
             }
 
             function getIconDayOrNight(){
-                if(Date("H") <= 18){
+                if(time < 5){
+                    return "night";
+                }else if(time > 5 && time < 18){
                     return "day";
                 }else{
                     return "night";
