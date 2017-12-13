@@ -17,22 +17,30 @@ $(document).ready(function(){
             var windMeterPerSec = weatherData.wind.speed;
             var weatherCloud = weatherData.clouds.all;
             
+            // temperature unit with wind speed mph/kmph
             $("#tempUnit").click(function(){
                 var currentTempUnit = $("#tempUnit").text();
                 var newTempUnit =  currentTempUnit === "C" ? "F" : "C";
                 $("#tempUnit").text(newTempUnit);
                 if(newTempUnit == "F"){
                     $("#temp").text(fahrenheit + " " + String.fromCharCode(176));
+                    $("#windSpeed").text(getWindSpeedMph() + " mph");
                 }else{
                     $("#temp").text(celcius + " " + String.fromCharCode(176));
+                    $("#windSpeed").text(getWindSpeedKmph() + " km/h");
                 }
             });
-
-            function getWindSpeed(){
-                var windMPH = (2.23694 * windMeterPerSec);
-                return (1.609344 * windMPH).toFixed(2);
+            
+            // wind speed mph and kmph
+            function getWindSpeedMph(){
+                return (2.23694 * windMeterPerSec).toFixed(2); 
             }
 
+            function getWindSpeedKmph(){
+                return (1.609344 * getWindSpeedMph()).toFixed(2);
+            }
+            
+            //detected day or night for weather icon css 
             function getIconDayOrNight(){
                 if(time < 5){
                     return "night";
@@ -49,7 +57,7 @@ $(document).ready(function(){
             $("#weatherDescription").html("<b>Weather:</b> " + weatherDescription);
             $("#weatherIcon").addClass("wi wi-owm-"+getIconDayOrNight()+"-"+weatherIconID);
             $("#hum").text(weatherHum + "%");
-            $("#windSpeed").text(getWindSpeed() + " km/h");
+            $("#windSpeed").text(getWindSpeedMph() + " mph");
             $("#cloud").text(weatherCloud + "%");
         });
     });
